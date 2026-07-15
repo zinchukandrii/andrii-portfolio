@@ -1,9 +1,9 @@
 # Andrii Zinchuk — Engineering Systems Portfolio
 
-Static portfolio for two public, verified software projects:
+Static portfolio for two public, verified software projects, each with a recruiter-facing case study:
 
-- [Evidence-First Agent Knowledge & Control Plane](https://github.com/zinchukandrii/agent-knowledge-control-plane)
-- [Resilient Runtime Failover Configuration](https://github.com/zinchukandrii/failover-config-pack)
+- [Evidence-First Agent Knowledge & Control Plane](projects/control-plane.html)
+- [Resilient Runtime Failover Configuration](projects/runtime-failover.html)
 
 ## Local preview
 

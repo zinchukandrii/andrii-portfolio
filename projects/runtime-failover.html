@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Case study: Resilient Runtime Failover Configuration by Andrii Zinchuk." />
+  <title>Runtime Failover Case Study — Andrii Zinchuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell nav-shell"><a class="brand" href="../index.html" aria-label="Andrii Zinchuk home"><span>AZ</span><i>/</i> Systems</a><nav aria-label="Primary navigation"><a href="../index.html#work">Work</a><a href="../index.html#approach">Approach</a><a href="#proof">Proof</a></nav><a class="nav-contact" href="mailto:zinchukandrii66@gmail.com">Get in touch <span>↗</span></a></div></header>
+  <main id="main">
+    <section class="case-hero shell"><p class="eyebrow">CASE STUDY / RELIABILITY</p><h1>Resilient Runtime Failover Configuration</h1><p class="lede">A provider-neutral tool for validating ordered runtime failover policies and simulating recovery paths without calling any provider.</p><div class="case-actions"><a class="button button-primary" href="https://github.com/zinchukandrii/failover-config-pack" target="_blank" rel="noopener noreferrer">Open repository <span>↗</span></a><a class="button button-secondary" href="../index.html#work">All projects</a></div></section>
+    <section class="shell case-summary"><article><span>PROBLEM</span><p>Fallback lists are often copied into runtime configuration without tests, leaving real failure behavior unclear.</p></article><article><span>DESIGN</span><p>A strict JSON contract is validated before a deterministic simulator evaluates the ordered route.</p></article><article><span>BOUNDARY</span><p>No credentials, provider adapters, health probing or live traffic are accepted by the demonstrator.</p></article></section>
+    <section class="shell simulation-panel" aria-label="Deterministic recovery path"><div class="simulation-title"><p class="eyebrow">OFFLINE SIMULATION</p><h2>Recovery path: selected after two retryable failures.</h2></div><div class="simulation-flow"><article><span>01</span><strong>provider-a / quality</strong><em>timeout</em></article><article><span>02</span><strong>provider-b / balanced</strong><em>rate_limited</em></article><article class="selected"><span>03</span><strong>provider-c / fast</strong><em>success → SELECTED</em></article></div></section>
+    <section class="case-dark" id="proof"><div class="shell"><div class="case-section-heading"><p class="eyebrow">CONTRACT</p><h2>Configuration defects do not become a routing decision.</h2></div><ol class="case-flow"><li><span>01</span><div><h3>Load</h3><p>Parse the configuration and stop on malformed JSON.</p></div></li><li><span>02</span><div><h3>Validate</h3><p>Reject duplicate route IDs, empty candidates and invalid numeric values.</p></div></li><li><span>03</span><div><h3>Simulate</h3><p>Consume declared outcomes only; no network call is made.</p></div></li><li><span>04</span><div><h3>Report</h3><p>Return SELECTED, BLOCKED or EXHAUSTED with the full attempt list.</p></div></li></ol></div></section>
+    <section class="shell case-proof-grid"><div><p class="eyebrow">MECHANICAL PROOF</p><h2>Policy behavior is executable.</h2></div><div class="proof-list"><article><strong>9</strong><span>tests passed</span></article><article><strong>3</strong><span>retryable outcomes in the example policy</span></article><article><strong>0</strong><span>provider calls in the simulator</span></article><article><strong>3</strong><span>terminal states: selected, blocked, exhausted</span></article></div></section>
+    <section class="shell case-limit"><p class="eyebrow">LIMITATIONS</p><p>This is a policy-validation and simulation tool, not a production traffic router. Production adoption requires approved adapters, secrets management, telemetry and an explicit rollback plan.</p></section>
+  </main>
+  <footer><div class="shell footer-grid"><div><p class="eyebrow">NEXT PROJECT</p><h2>Evidence-first agent knowledge and verification.</h2></div><div class="contact-links"><a href="control-plane.html">Read the case study <span>→</span></a><a href="../index.html">Portfolio home <span>↗</span></a></div></div></footer>
+</body>
+</html>

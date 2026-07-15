@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Case study: Evidence-First Agent Knowledge & Control Plane by Andrii Zinchuk." />
+  <title>Control Plane Case Study — Andrii Zinchuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell nav-shell"><a class="brand" href="../index.html" aria-label="Andrii Zinchuk home"><span>AZ</span><i>/</i> Systems</a><nav aria-label="Primary navigation"><a href="../index.html#work">Work</a><a href="../index.html#approach">Approach</a><a href="#proof">Proof</a></nav><a class="nav-contact" href="mailto:zinchukandrii66@gmail.com">Get in touch <span>↗</span></a></div></header>
+  <main id="main">
+    <section class="case-hero shell">
+      <p class="eyebrow">CASE STUDY / AGENT SYSTEMS</p>
+      <h1>Evidence-First Agent Knowledge &amp; Control Plane</h1>
+      <p class="lede">A local demonstrator for scoped agent memory, bounded worker collaboration, evidence verification and human approval gates.</p>
+      <div class="case-actions"><a class="button button-primary" href="https://github.com/zinchukandrii/agent-knowledge-control-plane" target="_blank" rel="noopener noreferrer">Open repository <span>↗</span></a><a class="button button-secondary" href="../index.html#work">All projects</a></div>
+    </section>
+    <section class="shell case-summary"><article><span>PROBLEM</span><p>Agent workflows can produce plausible output without a clear evidence trail or verification boundary.</p></article><article><span>DESIGN</span><p>Each fixture run records evidence cards, claims and a visible worker trace before it reaches a verified status.</p></article><article><span>BOUNDARY</span><p>Public fixtures only. No live LLM calls, web fetching or external side effects in the dashboard flow.</p></article></section>
+    <section class="shell case-image"><figure><img src="https://raw.githubusercontent.com/zinchukandrii/agent-knowledge-control-plane/main/docs/assets/dashboard-verified-run.png" alt="Verified run in the Control Plane dashboard showing evidence cards and worker trace" /><figcaption>Verified local fixture run. The screenshot is sourced from the public project repository.</figcaption></figure></section>
+    <section class="case-dark" id="proof"><div class="shell"><div class="case-section-heading"><p class="eyebrow">ARCHITECTURE</p><h2>One constrained path from task to verified brief.</h2></div><ol class="case-flow"><li><span>01</span><div><h3>Orchestrate</h3><p>Create a bounded task with an explicit project context and objective.</p></div></li><li><span>02</span><div><h3>Research</h3><p>Use fixture evidence instead of unrestricted retrieval.</p></div></li><li><span>03</span><div><h3>Write</h3><p>Generate a brief whose claims reference the evidence set.</p></div></li><li><span>04</span><div><h3>Verify</h3><p>Check the output before exposing a verified state and audit trace.</p></div></li></ol></div></section>
+    <section class="shell case-proof-grid"><div><p class="eyebrow">MECHANICAL PROOF</p><h2>Verified, not merely described.</h2></div><div class="proof-list"><article><strong>14</strong><span>tests passed</span></article><article><strong>94%</strong><span>coverage</span></article><article><strong>3</strong><span>evidence cards in the fixture run</span></article><article><strong>4</strong><span>worker stages in the audit trace</span></article></div></section>
+    <section class="shell case-limit"><p class="eyebrow">LIMITATIONS</p><p>This is an evidence and verification demonstrator, not an autonomous production research system. Human approval remains the final gate.</p></section>
+  </main>
+  <footer><div class="shell footer-grid"><div><p class="eyebrow">NEXT PROJECT</p><h2>Runtime failover policies, made testable.</h2></div><div class="contact-links"><a href="runtime-failover.html">Read the case study <span>→</span></a><a href="../index.html">Portfolio home <span>↗</span></a></div></div></footer>
+</body>
+</html>
