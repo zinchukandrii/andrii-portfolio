@@ -5,13 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Andrii Zinchuk — public portfolio of evidence-first AI systems, runtime reliability and engineering data observability." />
   <meta name="theme-color" content="#080d16" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Andrii Zinchuk — Engineering Systems Portfolio" />
+  <meta property="og:description" content="EngD materials and process engineering translated into inspectable Python, data-quality and reliable AI systems." />
+  <meta property="og:url" content="https://zinchukandrii.github.io/andrii-portfolio/" />
+  <meta property="og:image" content="https://zinchukandrii.github.io/andrii-portfolio/projects/assets/dashboard-desktop.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Andrii Zinchuk — Engineering Systems Portfolio" />
+  <meta name="twitter:description" content="Public, testable systems across engineering data, quality observability and reliable AI." />
+  <meta name="twitter:image" content="https://zinchukandrii.github.io/andrii-portfolio/projects/assets/dashboard-desktop.png" />
   <title>Andrii Zinchuk — Systems Portfolio</title>
+  <link rel="canonical" href="https://zinchukandrii.github.io/andrii-portfolio/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="signal.css?v=legibility-3" />
-  <script src="main.js?v=legibility-3" defer></script>
+  <link rel="stylesheet" href="signal.css?v=recruiter-proof-4" />
+  <script src="main.js?v=recruiter-proof-4" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Andrii Zinchuk",
+      "url": "https://zinchukandrii.github.io/andrii-portfolio/",
+      "jobTitle": "Senior Process Engineer",
+      "alumniOf": { "@type": "EducationalOrganization", "name": "Częstochowa University of Technology" },
+      "knowsAbout": ["Materials science", "Process engineering", "Industrial AI", "Data quality", "Python", "Validation"],
+      "sameAs": [
+        "https://github.com/zinchukandrii",
+        "https://www.linkedin.com/in/andrii-zinchuk-980121ba"
+      ]
+    }
+  </script>
 </head>
 <body class="signal-site">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -19,7 +46,7 @@
   <header class="signal-header" data-header>
     <div class="signal-shell signal-nav-shell">
       <a class="signal-brand" href="#top" aria-label="Andrii Zinchuk home"><span>AZ</span><b>ANDRII ZINCHUK</b></a>
-      <button class="signal-menu" type="button" aria-expanded="false" aria-controls="signal-nav" data-menu-button><span></span><span></span><span></span><em>MENU</em></button>
+      <button class="signal-menu" type="button" aria-expanded="false" aria-controls="signal-nav" data-menu-button><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><em>MENU</em></button>
       <nav class="signal-nav" id="signal-nav" aria-label="Primary navigation" data-menu>
         <a href="#projects" data-nav-link>Projects</a>
         <a href="#proof" data-nav-link>Proof</a>
@@ -39,11 +66,12 @@
         <div class="signal-hero-copy" data-reveal>
           <p class="signal-label"><i></i> SYSTEMS PORTFOLIO / 2026</p>
           <h1 id="hero-title">Engineering systems<br />that can be <span>inspected,</span><br />verified and trusted.</h1>
-          <p class="signal-lede">I’m <strong>Andrii Zinchuk, EngD.</strong> I build evidence-first software across AI systems, runtime reliability and engineering data — with public code, explicit limits and mechanical proof.</p>
+          <p class="signal-lede">I’m <strong>Andrii Zinchuk, EngD in Materials Science and a senior process engineer.</strong> I translate industrial quality, validation and materials experience into evidence-first Python, data and reliable AI systems — with public code, explicit limits and mechanical proof.</p>
           <div class="signal-actions">
             <a class="signal-button signal-button-main" href="#projects">View selected systems <span>↓</span></a>
             <a class="signal-button signal-button-quiet" href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
           </div>
+          <p class="signal-role-focus"><span>ROLE FOCUS</span> Industrial AI · Data Quality · Engineering Systems · Materials R&amp;D</p>
           <div class="signal-quick-nav" aria-label="Direct project navigation">
             <a href="#control-plane"><b>01</b><span>Agent Control<br />Plane</span><i>↘</i></a>
             <a href="#runtime-failover"><b>02</b><span>Runtime<br />Failover</span><i>↘</i></a>
@@ -96,7 +124,7 @@
             </div>
             <div class="signal-project-copy"><p class="signal-kicker">EVIDENCE-FIRST CONTROL PLANE</p><h3>Agent knowledge with verification and audit traces.</h3><p>A local FastAPI and SQLite demonstrator that moves a scoped research task through evidence collection, brief writing and verification — with each stage visible.</p></div>
             <div class="signal-tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Tests</span></div>
-            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>14 tests · 94% coverage</strong></div><a href="projects/control-plane.html">Read case study <b>→</b></a></footer>
+            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>14 tests · 94% coverage</strong></div><div class="signal-project-links"><a href="projects/control-plane.html">Case study <b>→</b></a><a href="https://github.com/zinchukandrii/agent-knowledge-control-plane" target="_blank" rel="noopener noreferrer">Source code <b>↗</b></a></div></footer>
           </article>
 
           <article class="signal-project signal-project-runtime" id="runtime-failover" data-reveal>
@@ -109,13 +137,13 @@
             </div>
             <div class="signal-project-copy"><p class="signal-kicker">RUNTIME FAILOVER CONFIGURATION</p><h3>Recovery policy that stays testable before it goes live.</h3><p>A provider-neutral JSON validator and deterministic simulator for ordered runtime fallback policies — designed to make failure handling reviewable without provider calls.</p></div>
             <div class="signal-tags"><span>Python</span><span>CLI</span><span>JSON contracts</span><span>Fail closed</span></div>
-            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>9 tests · offline simulation</strong></div><a href="projects/runtime-failover.html">Read case study <b>→</b></a></footer>
+            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>9 tests · offline simulation</strong></div><div class="signal-project-links"><a href="projects/runtime-failover.html">Case study <b>→</b></a><a href="https://github.com/zinchukandrii/failover-config-pack" target="_blank" rel="noopener noreferrer">Source code <b>↗</b></a></div></footer>
           </article>
 
           <article class="signal-project signal-project-quality" id="quality-observability" data-reveal>
             <div class="signal-project-top"><span>03 / ENGINEERING DATA</span><span><i></i> SYNTHETIC-ONLY</span></div>
             <div class="signal-quality-layout"><div class="signal-project-copy"><p class="signal-kicker">SYNTHETIC QUALITY OBSERVABILITY</p><h3>Quality signals validated before they become a dashboard.</h3><p>A FastAPI demonstrator that generates synthetic manufacturing data, validates its structure and traceability, then exposes quality, anomaly and drift signals in a responsive dashboard.</p><div class="signal-tags"><span>Python</span><span>DuckDB / SQL</span><span>Data validation</span><span>Docker</span><span>CI</span></div></div><a class="signal-dashboard-shot" href="projects/quality-observability.html" aria-label="Open Quality Observability case study"><img src="projects/assets/dashboard-desktop.png" alt="Synthetic Quality Observability dashboard showing quality metrics and defect signals" loading="lazy" /><span>OPEN CASE STUDY ↗</span></a></div>
-            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>22 tests · 93% coverage · DuckDB checks · Docker smoke</strong></div><a href="projects/quality-observability.html">Read case study <b>→</b></a></footer>
+            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>22 tests · 93% coverage · DuckDB checks · Docker smoke</strong></div><div class="signal-project-links"><a href="projects/quality-observability.html">Case study <b>→</b></a><a href="https://github.com/zinchukandrii/quality-observability-platform/actions/workflows/ci.yml" target="_blank" rel="noopener noreferrer">Live CI <b>↗</b></a><a href="https://github.com/zinchukandrii/quality-observability-platform" target="_blank" rel="noopener noreferrer">Source code <b>↗</b></a></div></footer>
           </article>
         </div>
       </div>
@@ -125,10 +153,10 @@
       <div class="signal-shell">
         <div class="signal-proof-top" data-reveal><p class="signal-label">PUBLIC PROOF</p><h2 id="proof-title">Credibility is not a claim.<br /><span>It is an inspectable trail.</span></h2></div>
         <div class="signal-proof-grid">
-          <article data-reveal><span>01</span><h3>Executable</h3><p>Public repositories, runnable code and documented setup paths.</p><i>↗</i></article>
-          <article data-reveal><span>02</span><h3>Verified</h3><p>Tests, coverage, linting and container smoke checks where they are relevant.</p><i>↗</i></article>
-          <article data-reveal><span>03</span><h3>Bounded</h3><p>Clear scope, fail-closed behavior and no invented production claims.</p><i>↗</i></article>
-          <article data-reveal><span>04</span><h3>Safe to show</h3><p>Synthetic fixtures and offline simulation — never employer or client data.</p><i>↗</i></article>
+          <article data-reveal><span>01</span><h3>Executable</h3><p>Public repositories, runnable code and documented setup paths.</p><a class="signal-proof-link" href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">Inspect repositories ↗</a></article>
+          <article data-reveal><span>02</span><h3>Verified</h3><p>Tests, coverage, linting and container smoke checks where they are relevant.</p><a class="signal-proof-link" href="https://github.com/zinchukandrii/quality-observability-platform/actions/workflows/ci.yml" target="_blank" rel="noopener noreferrer">Inspect live CI ↗</a></article>
+          <article data-reveal><span>03</span><h3>Bounded</h3><p>Clear scope, fail-closed behavior and no invented production claims.</p><a class="signal-proof-link" href="https://github.com/zinchukandrii/failover-config-pack" target="_blank" rel="noopener noreferrer">Inspect policy demo ↗</a></article>
+          <article data-reveal><span>04</span><h3>Safe to show</h3><p>Synthetic fixtures and offline simulation — never employer or client data.</p><a class="signal-proof-link" href="https://github.com/zinchukandrii/quality-observability-platform/blob/main/docs/privacy.md" target="_blank" rel="noopener noreferrer">Inspect privacy boundary ↗</a></article>
         </div>
       </div>
     </section>
@@ -151,7 +179,7 @@
     <section class="signal-about signal-section" id="about" aria-labelledby="about-title">
       <div class="signal-shell signal-about-grid">
         <div class="signal-about-marker" aria-hidden="true" data-reveal><span>AZ</span><i></i><i></i><i></i><p>ENGINEERING<br />↘ DATA<br />↘ AI SYSTEMS</p></div>
-        <div data-reveal><p class="signal-label">ABOUT</p><h2 id="about-title">From engineering process quality to <span>reliable software systems.</span></h2><p class="signal-about-copy">My background combines engineering, process thinking and quality with Python, data validation and AI systems. I care about the uncomfortable part of software: what happens when data is missing, configuration is wrong or an automated system needs to justify its output.</p><div class="signal-profile-routes" aria-label="Role-specific CV requests"><a href="mailto:zinchukandrii66@gmail.com?subject=CV%20request%20%E2%80%94%20Data%20%26%20BI"><span>DATA / BI</span><strong>Python, validation, reporting and quality data</strong><i>Request targeted CV ↗</i></a><a href="mailto:zinchukandrii66@gmail.com?subject=CV%20request%20%E2%80%94%20Engineering%20%26%20AI"><span>ENGINEERING / AI</span><strong>Process systems, materials and AI-enabled improvement</strong><i>Request targeted CV ↗</i></a></div><div class="signal-about-links"><a href="https://www.linkedin.com/in/andrii-zinchuk-980121ba" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="#contact">Contact <span>↓</span></a></div></div>
+        <div data-reveal><p class="signal-label">ABOUT</p><h2 id="about-title">From materials and process quality to <span>reliable software systems.</span></h2><p class="signal-about-copy">My background spans materials science, PVD and thin films, SMT process engineering, validation and quality systems. I use that industrial context with Python, data validation and AI to build systems that remain useful when data is missing, configuration is wrong or an automated decision needs to justify its output.</p><div class="signal-profile-routes" aria-label="Role-specific CV requests"><a href="mailto:zinchukandrii66@gmail.com?subject=CV%20request%20%E2%80%94%20Data%20%26%20BI"><span>DATA / BI</span><strong>Python, validation, reporting and quality data</strong><i>Request targeted CV ↗</i></a><a href="mailto:zinchukandrii66@gmail.com?subject=CV%20request%20%E2%80%94%20Engineering%20%26%20AI"><span>ENGINEERING / AI</span><strong>Process systems, materials and AI-enabled improvement</strong><i>Request targeted CV ↗</i></a></div><div class="signal-about-links"><a href="https://www.linkedin.com/in/andrii-zinchuk-980121ba" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="#contact">Contact <span>↓</span></a></div></div>
       </div>
     </section>
   </main>

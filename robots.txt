@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://zinchukandrii.github.io/andrii-portfolio/sitemap.xml

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AZ">
+  <rect width="64" height="64" rx="10" fill="#080d16"/>
+  <rect x="3" y="3" width="58" height="58" rx="8" fill="none" stroke="#39f0d1" stroke-width="2"/>
+  <text x="32" y="40" fill="#39f0d1" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">AZ</text>
+</svg>
