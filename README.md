@@ -1,9 +1,10 @@
 # Andrii Zinchuk — Engineering Systems Portfolio
 
-Static portfolio for two public, verified software projects, each with a recruiter-facing case study:
+Static portfolio for three public, verified software projects, each with a recruiter-facing case study:
 
 - [Evidence-First Agent Knowledge & Control Plane](projects/control-plane.html)
 - [Resilient Runtime Failover Configuration](projects/runtime-failover.html)
+- [Synthetic Quality Observability Platform](projects/quality-observability.html)
 
 ## Local preview
 

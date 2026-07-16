@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Case study: Synthetic Quality Observability Platform by Andrii Zinchuk." />
+  <title>Quality Observability Case Study — Andrii Zinchuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell nav-shell"><a class="brand" href="../index.html" aria-label="Andrii Zinchuk home"><span>AZ</span><i>/</i> Systems</a><nav aria-label="Primary navigation"><a href="../index.html#work">Work</a><a href="../index.html#approach">Approach</a><a href="#proof">Proof</a></nav><a class="nav-contact" href="mailto:zinchukandrii66@gmail.com">Get in touch <span>↗</span></a></div></header>
+  <main id="main">
+    <section class="case-hero shell">
+      <p class="eyebrow">CASE STUDY / ENGINEERING DATA</p>
+      <h1>Synthetic Quality Observability Platform</h1>
+      <p class="lede">A synthetic engineering-data demonstrator that validates traceable production records before surfacing quality, anomaly and drift signals in a responsive dashboard.</p>
+      <div class="case-actions"><a class="button button-primary" href="https://github.com/zinchukandrii/quality-observability-platform" target="_blank" rel="noopener noreferrer">Open repository <span>↗</span></a><a class="button button-secondary" href="../index.html#work">All projects</a></div>
+    </section>
+
+    <section class="shell case-summary">
+      <article><span>PROBLEM</span><p>A dashboard is not trustworthy when its quality metrics are derived from structurally invalid or untraceable records.</p></article>
+      <article><span>DESIGN</span><p>Deterministic synthetic data flows through fail-closed validation, drift checks, analytics endpoints and an API-driven dashboard.</p></article>
+      <article><span>BOUNDARY</span><p>Synthetic fixtures only. No employer, client, production-line, product or operational data is used.</p></article>
+    </section>
+
+    <section class="shell case-image"><figure><img src="assets/dashboard-desktop.png" alt="Synthetic Quality Observability dashboard with quality metrics, defect Pareto and production trend" /><figcaption>Responsive local dashboard rendered from the demonstrator API. Synthetic data — portfolio demonstrator only.</figcaption></figure></section>
+
+    <section class="case-dark" id="proof"><div class="shell"><div class="case-section-heading"><p class="eyebrow">ARCHITECTURE</p><h2>Data must pass a contract before it becomes an operational signal.</h2></div><ol class="case-flow"><li><span>01</span><div><h3>Generate</h3><p>Create deterministic production runs, batches, inspections, defects and AOI-like signals using a fixed seed.</p></div></li><li><span>02</span><div><h3>Validate</h3><p>Reject broken schema, ranges, foreign keys and trace relationships before reporting a quality result.</p></div></li><li><span>03</span><div><h3>Analyse</h3><p>Calculate inspection, defect, anomaly and drift indicators from the accepted synthetic dataset.</p></div></li><li><span>04</span><div><h3>Expose</h3><p>Serve an inspectable dashboard and API with an explicit synthetic-data classification.</p></div></li></ol></div></section>
+
+    <section class="shell case-proof-grid"><div><p class="eyebrow">MECHANICAL PROOF</p><h2>A data product with visible limits.</h2></div><div class="proof-list"><article><strong>20</strong><span>tests passed</span></article><article><strong>92%</strong><span>test coverage</span></article><article><strong>0</strong><span>real production records</span></article><article><strong>3</strong><span>CI checks: quality, security, Docker smoke</span></article></div></section>
+
+    <section class="shell case-limit"><p class="eyebrow">LIMITATIONS</p><p>This is a portfolio demonstrator, not a deployed manufacturing execution system. Its synthetic metrics demonstrate data contracts, observability and dashboard design — not real process performance.</p></section>
+  </main>
+  <footer><div class="shell footer-grid"><div><p class="eyebrow">NEXT PROJECT</p><h2>Evidence-first agent knowledge and verification.</h2></div><div class="contact-links"><a href="control-plane.html">Read the case study <span>→</span></a><a href="../index.html">Portfolio home <span>↗</span></a></div></div></footer>
+</body>
+</html>
