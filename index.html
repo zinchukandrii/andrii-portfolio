@@ -3,118 +3,147 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Andrii Zinchuk — engineering systems, data quality and AI reliability portfolio." />
-  <meta name="theme-color" content="#0c1524" />
-  <title>Andrii Zinchuk — Engineering Systems Portfolio</title>
+  <meta name="description" content="Andrii Zinchuk — public portfolio of evidence-first AI systems, runtime reliability and engineering data observability." />
+  <meta name="theme-color" content="#080d16" />
+  <title>Andrii Zinchuk — Systems Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="signal.css" />
+  <script src="main.js" defer></script>
 </head>
-<body>
+<body class="signal-site">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="shell nav-shell">
-      <a class="brand" href="#top" aria-label="Andrii Zinchuk home"><span>AZ</span><i>/</i> Systems</a>
-      <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Contact</a>
+
+  <header class="signal-header" data-header>
+    <div class="signal-shell signal-nav-shell">
+      <a class="signal-brand" href="#top" aria-label="Andrii Zinchuk home"><span>AZ</span><b>ANDRII ZINCHUK</b></a>
+      <button class="signal-menu" type="button" aria-expanded="false" aria-controls="signal-nav" data-menu-button><span></span><span></span><span></span><em>MENU</em></button>
+      <nav class="signal-nav" id="signal-nav" aria-label="Primary navigation" data-menu>
+        <a href="#projects" data-nav-link>Projects</a>
+        <a href="#proof" data-nav-link>Proof</a>
+        <a href="#about" data-nav-link>About</a>
+        <a href="#contact" data-nav-link>Contact</a>
+        <a class="signal-nav-github" href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
       </nav>
-      <a class="nav-contact" href="mailto:zinchukandrii66@gmail.com">Get in touch <span>↗</span></a>
     </div>
   </header>
 
   <main id="main">
-    <section id="top" class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow"><span></span> ENGINEERING / DATA / AI SYSTEMS</p>
-        <h1>Reliable systems start with evidence.</h1>
-        <p class="lede">I’m <strong>Andrii Zinchuk, EngD</strong> — an engineering and data practitioner building evidence-first software for trustworthy AI and operational decisions.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore projects <span>↓</span></a>
-          <a class="button button-secondary" href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+    <section class="signal-hero" id="top" aria-labelledby="hero-title">
+      <div class="signal-noise" aria-hidden="true"></div>
+      <div class="signal-grid-bg" aria-hidden="true"></div>
+      <div class="signal-shell signal-hero-grid">
+        <div class="signal-hero-copy" data-reveal>
+          <p class="signal-label"><i></i> SYSTEMS PORTFOLIO / 2026</p>
+          <h1 id="hero-title">Engineering systems<br />that can be <span>inspected,</span><br />verified and trusted.</h1>
+          <p class="signal-lede">I’m <strong>Andrii Zinchuk, EngD.</strong> I build evidence-first software across AI systems, runtime reliability and engineering data — with public code, explicit limits and mechanical proof.</p>
+          <div class="signal-actions">
+            <a class="signal-button signal-button-main" href="#projects">View selected systems <span>↓</span></a>
+            <a class="signal-button signal-button-quiet" href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+          </div>
+          <div class="signal-quick-nav" aria-label="Direct project navigation">
+            <a href="#control-plane"><b>01</b><span>Agent Control<br />Plane</span><i>↘</i></a>
+            <a href="#runtime-failover"><b>02</b><span>Runtime<br />Failover</span><i>↘</i></a>
+            <a href="#quality-observability"><b>03</b><span>Quality<br />Observability</span><i>↘</i></a>
+          </div>
+        </div>
+
+        <div class="signal-console" aria-hidden="true" data-reveal>
+          <div class="signal-console-top"><span>TRACE / LIVE VIEW</span><span class="signal-live"><i></i> SIGNAL READY</span></div>
+          <svg class="signal-trace" viewBox="0 0 560 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="signal-trace-line signal-trace-line-one" d="M52 105H175L230 160H355L430 235H518" />
+            <path class="signal-trace-line signal-trace-line-two" d="M52 342H142L203 280H335L392 223H518" />
+            <path class="signal-trace-line signal-trace-line-three" d="M175 105V342" />
+            <path class="signal-trace-line signal-trace-line-four" d="M355 160V280" />
+            <circle class="signal-node node-one" cx="52" cy="105" r="9" />
+            <circle class="signal-node node-two" cx="175" cy="105" r="9" />
+            <circle class="signal-node node-three" cx="230" cy="160" r="9" />
+            <circle class="signal-node node-four" cx="355" cy="160" r="9" />
+            <circle class="signal-node node-five" cx="430" cy="235" r="9" />
+            <circle class="signal-node node-six" cx="518" cy="235" r="12" />
+            <circle class="signal-node node-seven" cx="52" cy="342" r="9" />
+            <circle class="signal-node node-eight" cx="175" cy="342" r="9" />
+            <circle class="signal-node node-nine" cx="203" cy="280" r="9" />
+            <circle class="signal-node node-ten" cx="335" cy="280" r="9" />
+            <circle class="signal-node node-eleven" cx="392" cy="223" r="9" />
+          </svg>
+          <div class="signal-console-card card-a"><span>INPUT</span><strong>Evidence</strong><small>scoped source</small></div>
+          <div class="signal-console-card card-b"><span>POLICY</span><strong>Bounded</strong><small>fail closed</small></div>
+          <div class="signal-console-card card-c"><span>OUTPUT</span><strong>Verified</strong><small>inspectable trace</small></div>
+          <div class="signal-console-footer"><span>03 systems</span><span>public / synthetic-safe</span></div>
         </div>
       </div>
-      <aside class="hero-rail" aria-label="Portfolio focus">
-        <p>2026 portfolio</p>
-        <div><strong>03</strong><span>public flagship projects</span></div>
-        <div><strong>100%</strong><span>public fixtures or offline simulation</span></div>
-        <div><strong>0</strong><span>client or production data</span></div>
-      </aside>
     </section>
 
-    <section id="work" class="shell work-section">
-      <div class="section-header">
-        <div><p class="eyebrow">SELECTED WORK</p><h2>Software with an inspectable decision trail.</h2></div>
-        <p>Public projects built around deterministic fixtures, explicit boundaries and mechanical verification.</p>
-      </div>
+    <section class="signal-projects signal-section" id="projects" aria-labelledby="projects-title">
+      <div class="signal-shell">
+        <div class="signal-section-head" data-reveal>
+          <div><p class="signal-label">SELECTED SYSTEMS</p><h2 id="projects-title">Three systems.<br /><span>Different failure modes.</span></h2></div>
+          <p>Each project is a public technical artifact: a defined problem, an inspectable implementation and verification that can be independently checked.</p>
+        </div>
 
-      <div class="project-grid">
-        <article class="project-card project-card-primary">
-          <div class="project-topline"><span>01 / AGENT SYSTEMS</span><span class="status"><i></i> VERIFIED</span></div>
-          <div class="project-body">
-            <p class="project-kicker">EVIDENCE-FIRST CONTROL PLANE</p>
-            <h3>Agent knowledge with verification and audit traces.</h3>
-            <p>A local FastAPI and SQLite demonstrator that moves a scoped research task through evidence collection, brief writing and verification — with every stage visible in the dashboard.</p>
-            <ul class="tag-list"><li>Python</li><li>FastAPI</li><li>SQLite</li><li>Tests</li></ul>
-          </div>
-          <div class="project-proof"><div><span>QUALITY GATES</span><strong>14 tests · 94% coverage</strong></div><div class="project-links"><a href="projects/control-plane.html">Case study <span>→</span></a><a href="https://github.com/zinchukandrii/agent-knowledge-control-plane" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a></div></div>
-        </article>
-
-        <article class="project-card project-card-secondary">
-          <div class="project-topline"><span>02 / RELIABILITY</span><span class="status"><i></i> VALIDATED</span></div>
-          <div class="project-body">
-            <p class="project-kicker">RUNTIME FAILOVER CONFIGURATION</p>
-            <h3>Testable recovery policy without provider calls.</h3>
-            <p>A provider-neutral JSON validator and deterministic simulator for ordered runtime fallback policies. It makes failure handling reviewable before any live integration exists.</p>
-            <ul class="tag-list"><li>Python</li><li>CLI</li><li>JSON contracts</li><li>Fail closed</li></ul>
-          </div>
-          <div class="project-proof"><div><span>QUALITY GATES</span><strong>9 tests · offline simulation</strong></div><div class="project-links"><a href="projects/runtime-failover.html">Case study <span>→</span></a><a href="https://github.com/zinchukandrii/failover-config-pack" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a></div></div>
-        </article>
-
-        <article class="project-card project-card-tertiary">
-          <div class="project-topline"><span>03 / ENGINEERING DATA</span><span class="status"><i></i> VERIFIED</span></div>
-          <div class="project-body project-body-featured">
-            <div>
-              <p class="project-kicker">SYNTHETIC QUALITY OBSERVABILITY</p>
-              <h3>Quality signals that are validated before they become a dashboard.</h3>
-              <p>A FastAPI demonstrator that generates synthetic manufacturing data, validates its structure and traceability, then exposes quality, anomaly and drift signals in a responsive dashboard.</p>
-              <ul class="tag-list"><li>Python</li><li>FastAPI</li><li>Data validation</li><li>Docker</li><li>CI</li></ul>
+        <div class="signal-project-grid">
+          <article class="signal-project signal-project-control" id="control-plane" data-reveal>
+            <div class="signal-project-top"><span>01 / AGENT SYSTEMS</span><span><i></i> VERIFIED</span></div>
+            <div class="signal-project-visual control-visual" aria-hidden="true">
+              <div class="control-source">SOURCE<br /><b>01</b></div><div class="control-source source-two">SOURCE<br /><b>02</b></div>
+              <div class="control-core"><span>VERIFY</span><strong>Evidence</strong><small>traceable decision</small></div>
+              <div class="control-output">BRIEF<br /><b>✓</b></div>
+              <svg viewBox="0 0 520 220"><path d="M92 64H208M92 158H208M311 110H425" /><path d="M186 53l22 11-22 11M186 147l22 11-22 11M403 99l22 11-22 11" /></svg>
             </div>
-            <div class="project-dashboard-preview" role="img" aria-label="Preview of the Synthetic Quality Observability dashboard"></div>
-          </div>
-          <div class="project-proof"><div><span>QUALITY GATES</span><strong>20 tests · 92% coverage · Docker smoke</strong></div><div class="project-links"><a href="projects/quality-observability.html">Case study <span>→</span></a><a href="https://github.com/zinchukandrii/quality-observability-platform" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a></div></div>
-        </article>
+            <div class="signal-project-copy"><p class="signal-kicker">EVIDENCE-FIRST CONTROL PLANE</p><h3>Agent knowledge with verification and audit traces.</h3><p>A local FastAPI and SQLite demonstrator that moves a scoped research task through evidence collection, brief writing and verification — with each stage visible.</p></div>
+            <div class="signal-tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Tests</span></div>
+            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>14 tests · 94% coverage</strong></div><a href="projects/control-plane.html">Read case study <b>→</b></a></footer>
+          </article>
+
+          <article class="signal-project signal-project-runtime" id="runtime-failover" data-reveal>
+            <div class="signal-project-top"><span>02 / RELIABILITY</span><span><i></i> VALIDATED</span></div>
+            <div class="signal-project-visual runtime-visual" aria-hidden="true">
+              <div class="runtime-status"><span>REQUEST</span><b>01</b><i>✓</i></div>
+              <div class="runtime-rail"><span class="rail-active"></span><span></span><span></span></div>
+              <div class="runtime-policy"><div><span>PRIMARY</span><strong>unavailable</strong><i>×</i></div><div><span>FALLBACK 01</span><strong>policy valid</strong><i>✓</i></div><div><span>FALLBACK 02</span><strong>not invoked</strong><i>–</i></div></div>
+              <p>ordered policy → reviewable outcome</p>
+            </div>
+            <div class="signal-project-copy"><p class="signal-kicker">RUNTIME FAILOVER CONFIGURATION</p><h3>Recovery policy that stays testable before it goes live.</h3><p>A provider-neutral JSON validator and deterministic simulator for ordered runtime fallback policies — designed to make failure handling reviewable without provider calls.</p></div>
+            <div class="signal-tags"><span>Python</span><span>CLI</span><span>JSON contracts</span><span>Fail closed</span></div>
+            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>9 tests · offline simulation</strong></div><a href="projects/runtime-failover.html">Read case study <b>→</b></a></footer>
+          </article>
+
+          <article class="signal-project signal-project-quality" id="quality-observability" data-reveal>
+            <div class="signal-project-top"><span>03 / ENGINEERING DATA</span><span><i></i> SYNTHETIC-ONLY</span></div>
+            <div class="signal-quality-layout"><div class="signal-project-copy"><p class="signal-kicker">SYNTHETIC QUALITY OBSERVABILITY</p><h3>Quality signals validated before they become a dashboard.</h3><p>A FastAPI demonstrator that generates synthetic manufacturing data, validates its structure and traceability, then exposes quality, anomaly and drift signals in a responsive dashboard.</p><div class="signal-tags"><span>Python</span><span>FastAPI</span><span>Data validation</span><span>Docker</span><span>CI</span></div></div><a class="signal-dashboard-shot" href="projects/quality-observability.html" aria-label="Open Quality Observability case study"><img src="projects/assets/dashboard-desktop.png" alt="Synthetic Quality Observability dashboard showing quality metrics and defect signals" loading="lazy" /><span>OPEN CASE STUDY ↗</span></a></div>
+            <footer class="signal-project-foot"><div><span>QUALITY GATES</span><strong>20 tests · 92% coverage · Docker smoke</strong></div><a href="projects/quality-observability.html">Read case study <b>→</b></a></footer>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="approach" class="approach-section">
-      <div class="shell approach-grid">
-        <div><p class="eyebrow">ENGINEERING APPROACH</p><h2>What I optimise for.</h2><p class="approach-intro">The goal is not a convincing demo. It is a system whose limits, data boundaries and decisions can be inspected.</p></div>
-        <ol class="principles">
-          <li><span>01</span><div><h3>Evidence first</h3><p>Claims are grounded in reproducible fixtures, clear sources or explicit test results.</p></div></li>
-          <li><span>02</span><div><h3>Fail closed</h3><p>Invalid configuration, missing knowledge and unknown outcomes do not silently become success.</p></div></li>
-          <li><span>03</span><div><h3>Bounded automation</h3><p>Automation is scoped, auditable and kept separate from unverified external action.</p></div></li>
-          <li><span>04</span><div><h3>Privacy by default</h3><p>Public work uses synthetic fixtures or offline simulations — never employer, client or production data.</p></div></li>
-        </ol>
+    <section class="signal-proof signal-section" id="proof" aria-labelledby="proof-title">
+      <div class="signal-shell">
+        <div class="signal-proof-top" data-reveal><p class="signal-label">PUBLIC PROOF</p><h2 id="proof-title">Credibility is not a claim.<br /><span>It is an inspectable trail.</span></h2></div>
+        <div class="signal-proof-grid">
+          <article data-reveal><span>01</span><h3>Executable</h3><p>Public repositories, runnable code and documented setup paths.</p><i>↗</i></article>
+          <article data-reveal><span>02</span><h3>Verified</h3><p>Tests, coverage, linting and container smoke checks where they are relevant.</p><i>↗</i></article>
+          <article data-reveal><span>03</span><h3>Bounded</h3><p>Clear scope, fail-closed behavior and no invented production claims.</p><i>↗</i></article>
+          <article data-reveal><span>04</span><h3>Safe to show</h3><p>Synthetic fixtures and offline simulation — never employer or client data.</p><i>↗</i></article>
+        </div>
       </div>
     </section>
 
-    <section class="shell evidence-section" aria-labelledby="evidence-title">
-      <div class="evidence-statement"><p class="eyebrow">PORTFOLIO STANDARD</p><h2 id="evidence-title">Demonstrated today.<br />Not a skills wish-list.</h2></div>
-      <div class="evidence-grid">
-        <article><span>IMPLEMENTATION</span><p>Source code, test suites and executable examples are public.</p></article>
-        <article><span>VERIFICATION</span><p>Each project has run locally with mechanical quality gates.</p></article>
-        <article><span>LIMITS</span><p>Provider integrations, live traffic and production claims are deliberately out of scope.</p></article>
+    <section class="signal-about signal-section" id="about" aria-labelledby="about-title">
+      <div class="signal-shell signal-about-grid">
+        <div class="signal-about-marker" aria-hidden="true" data-reveal><span>AZ</span><i></i><i></i><i></i><p>ENGINEERING<br />↘ DATA<br />↘ AI SYSTEMS</p></div>
+        <div data-reveal><p class="signal-label">ABOUT</p><h2 id="about-title">From engineering process quality to <span>reliable software systems.</span></h2><p class="signal-about-copy">My background combines engineering, process thinking and quality with Python, data validation and AI systems. I care about the uncomfortable part of software: what happens when data is missing, configuration is wrong or an automated system needs to justify its output.</p><div class="signal-about-links"><a href="https://www.linkedin.com/in/andrii-zinchuk-980121ba" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="#contact">Contact <span>↓</span></a></div></div>
       </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <div class="shell footer-grid">
-      <div><p class="eyebrow">LET’S CONNECT</p><h2>Engineering problems deserve evidence-led solutions.</h2></div>
-      <div class="contact-links"><a href="mailto:zinchukandrii66@gmail.com">zinchukandrii66@gmail.com</a><a href="https://www.linkedin.com/in/andrii-zinchuk-980121ba" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><p>Gdańsk, Poland</p></div>
+  <footer class="signal-footer" id="contact">
+    <div class="signal-shell signal-footer-grid">
+      <div data-reveal><p class="signal-label"><i></i> CONTACT</p><h2>Let’s build systems that hold up <span>under inspection.</span></h2></div>
+      <div class="signal-contact" data-reveal><a class="signal-email" href="mailto:zinchukandrii66@gmail.com">zinchukandrii66@gmail.com <span>↗</span></a><div><a href="https://www.linkedin.com/in/andrii-zinchuk-980121ba" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/zinchukandrii" target="_blank" rel="noopener noreferrer">GitHub</a><span>Gdańsk, Poland</span></div></div>
     </div>
   </footer>
 </body>
