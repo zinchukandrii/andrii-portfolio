@@ -131,9 +131,22 @@
     row.addEventListener('focus', activate);
   });
 
+  let heroInView = true;
+  const syncAmbientMotion = () => hero?.classList.toggle('is-motion-paused', document.hidden || !heroInView);
+  document.addEventListener('visibilitychange', syncAmbientMotion);
+  syncAmbientMotion();
+
   if (!('IntersectionObserver' in window)) {
     revealItems.forEach((item) => item.classList.add('is-visible'));
     return;
+  }
+
+  if (hero) {
+    const ambientObserver = new IntersectionObserver(([entry]) => {
+      heroInView = entry.isIntersecting;
+      syncAmbientMotion();
+    }, { rootMargin: '120px 0px' });
+    ambientObserver.observe(hero);
   }
 
   if (!reduceMotion) {
